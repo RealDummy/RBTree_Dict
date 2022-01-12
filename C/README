@@ -1,0 +1,30 @@
+Order.c
+Dictionary.c
+Dictionary.h
+DictionaryTest.c
+Makefile
+README
+
+
+Order.c: honestly pretty sure this is just here to test whether this is really a rb tree or not.
+
+Dictionary.c: code for Dictionary.h.
+
+Dictionary.h: Dictionary ADT. Can change the #defines to suit the needs of the client.
+
+DictionaryTest.c: Tests Dictionary ADT.
+
+Makefile: Compiles the code. Look at the file to know what it do. type make, or make then one of the extensionless commands in there.
+
+README: this
+
+
+Design Decisions:
+I used the pseudocode and didn't make too many design choices myself. That being said, at least my printDictionary take in any amount of
+lower/uper case letters, and the order part is optional. I also made the VAL_UNDEF NULL, which is a really bad idea because NULL is a common 
+thing to enter.
+
+
+Usuage:
+./Order "infile" "outfile" 
+infile is a text file to be added line by line to a Red Black tree. Outfile is a pre, post, and inorder traversal of the tree.
